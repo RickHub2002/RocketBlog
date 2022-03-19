@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+
+    background-color: var(--dark-white);
+}
+
+h2, h4 {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --purple-bg: #290742;
+    --dark-bg: #170027;
+    --button-bg: #9e6dc2;
+    --white: #fff;
+    --light-purple: #fbf6ff;
+    --white-bg: #f2f2f2;
+    --line: #F2E7FA;
+    --light-grey: #d4d4d4;
+    --green: #4fff4b;
+}
+
+.container {
+    margin: 0 auto;
+
+    padding: 0 40px;
+}
+
+.header-content {
+    background-color: var(--purple-bg);
+
+    width: 100%;
+
+    padding: 48px 0;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-logo {
+    cursor: pointer;
+}
+
+.list {
+    display: flex;
+    gap: 1rem;
+
+    border-left: 2px solid var(--green);
+
+    padding-left: 2px;
+
+    list-style-type: none;
+}
+
+.list-items {
+    color: var(--light-grey);
+    font-weight: 400;
+}
+
+.list-links {
+    color: inherit;
+    
+    text-decoration: none;
+}
+
+.list-links:hover {
+    color: var(--white);
+    
+    cursor: pointer;
+
+    transition: 0.1s ease;
+}
+
+.search {
+    display: flex;
+}
+
+.search-field {
+    width: 300px;
+    height: 44px;
+
+    padding: 20px;
+
+    background-color: var(--dark-bg);
+    color: var(--light-purple);
+
+    border: 0;
+}
+
+.search-field:focus {
+    border-left: 1px solid var(--button-bg);
+    border-bottom: 1px solid var(--button-bg);
+
+    transition: 0.1s ease;
+
+    outline: none;
+}
+
+.search-field::placeholder {
+    color: var(--light-purple);
+    font-weight: 500;
+}
+
+.search-field:focus::placeholder {
+    color: var(--white);
+}
+
+.search-button {
+    width: 70px;
+    height: 44px;
+
+    background-color: var(--button-bg);
+
+    border: 0;
+}
+
+.search-button:hover {
+    cursor: pointer;
+
+    filter: brightness(110%);
+
+    transition: 0.2s ease;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+
+    margin-top: 80px;
+}
+
+.left-content {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    max-width: 40%;
+}
+
+.main-topic {
+    font-size: 2.25rem;
+    
+    color: var(--button-bg);
+}
+
+.main-topic-desc {
+    color: var(--light-purple);
+
+    font-size: 1.125rem;
+}
+
+.see-more {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+.see-more:hover {
+    cursor: pointer;
+
+    text-decoration: underline;
+}
+
+.arrow-text {
+    color: var(--button-bg);
+}
+
+.arrow-link {
+    color: inherit;
+
+    text-decoration: none;
+}
+
+.right-content {
+    max-width: 50%;
+}
+
+.right-content img {
+    width: 100%;
+}
+
+.main-content {
+    margin-top: 80px;
+}
+
+.top-posts {
+    display: flex;
+    gap: 8rem;
+    justify-content: space-between;
+
+    margin-bottom: 80px;
+}
+
+.post-1 {
+    width: 100%;
+}
+
+.post-1 img {
+    width: 100%;
+}
+
+.post-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.post-date {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.post-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    color: var(--purple-bg);
+}
+
+.post-desc {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.sub-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sub-post-1 {
+    border-bottom: 1px solid var(--line);
+
+    padding-bottom: 48px;
+}
+
+.mini-posts {
+    display: flex;
+    flex-basis: 25%;
+    gap: 2rem;
+    justify-content: space-between;
+
+    padding-bottom: 80px;
+}
+
+.post-2 img, .post-3 img, .post-4 img {
+    width: 100%;
+}
+
+@media screen and (max-width: 950px) {
+    .nav-items {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .main-header {
+        display: block;
+        width: 100%;
+    
+        margin-top: 80px;
+    }
+
+    .left-content {
+        max-width: 100%;
+    }
+
+    .right-content {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top-posts {
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+    
+        margin-bottom: 80px;
+    }
+
+    .sub-post-2 {
+        border-bottom: 1px solid black;
+
+        padding-bottom: 48px;
+    }
+
+    .mini-posts {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: space-between;
+    
+        padding-bottom: 80px;
+    }
+    
+    .post-2 img, .post-3 img, .post-4 img {
+        width: 100%;
+    }
+}
+
+
+
+
+
