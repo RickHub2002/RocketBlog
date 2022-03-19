@@ -1,5 +1,5 @@
 # RocketBlog
-Criação de um blog de notícias para desenvolvedores!
+Criação de um blog responsível de notícias para desenvolvedores!
 
 Layout feito a partir do modelo da RocketSeat já existente no figma.
 
